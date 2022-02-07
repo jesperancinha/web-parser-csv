@@ -35,6 +35,7 @@ phpunit --generate-configuration
 ## How to run
 
 ```shell
+cd src
 php -S localhost:8000 
 ```
 
