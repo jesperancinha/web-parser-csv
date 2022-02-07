@@ -1,7 +1,7 @@
 <?php
 
-$uploaddir = 'C:\\Uploads\\';
-$uploadfile = $uploaddir . basename($_FILES['userfile']['name']);
+$upload_dir = 'tmp/';
+$upload_file = $upload_dir . basename($_FILES['user-file']['name']);
 
 class Person 	{
 	
@@ -9,7 +9,7 @@ class Person 	{
 	var $firstname;
 	var $lastname;
 	
-	function Person($personID,$firstname,$lastname)
+	function __construct($personID, $firstname, $lastname)
 	{
 		 $this->personId = $personID;
 		 $this->firstname = $firstname;
@@ -28,23 +28,23 @@ function cmp($a, $b)
 
 
 
-if (move_uploaded_file($_FILES['userfile']['tmp_name'], $uploadfile)) {
+if (move_uploaded_file($_FILES['user-file']['tmp_name'], $upload_file)) {
   echo "Thank you " . $_POST['email'] . ". The result of the sorting is:";
 } else {
    echo "Upload failed!!";
 }
 
-$gestor = @fopen($uploadfile, "r");
+$gestor = @fopen($upload_file, "r");
 $arrayTest =array();
-$bufer = fgets($gestor, 4096);
+$buffer = fgets($gestor, 4096);
 if ($gestor) {
-	while (($bufer = fgets($gestor, 4096)) !== false) {
-		list($id,$name,$surname) = explode(",", $bufer);
+	while (($buffer = fgets($gestor, 4096)) !== false) {
+		list($id,$name,$surname) = explode(",", $buffer);
 		$person = new Person($id, $name, $surname);
-		array_push($arrayTest, $person);
+		$arrayTest[] = $person;
 	}
 	if (!feof($gestor)) {
-		echo "Error: Unexpected faillure!\n";
+		echo "Error: Unexpected failure!\n";
 	}
 	fclose($gestor);
 }
@@ -64,5 +64,3 @@ foreach ($arrayTest as &$value) {
 
 echo "</p>";
 
-
-?> 

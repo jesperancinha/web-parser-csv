@@ -30,6 +30,12 @@ brew install php
 brew install phpunit
 ```
 
+## How to run
+
+```shell
+php -S localhost:8000 
+```
+
 ## Buy me a coffee
 
 I hope you enjoyed this repository. If you did, you can optionally please buy me a coffee, which supports me in constantly improve and make new free content regularly for everyone. Thank you so much!
