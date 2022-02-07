@@ -28,6 +28,8 @@ A Web application developed in PHP to parse comma separated files (CSV).
 ```shell
 brew install php
 brew install phpunit
+pecl install pcov
+phpunit --generate-configuration
 ```
 
 ## How to run
@@ -35,6 +37,10 @@ brew install phpunit
 ```shell
 php -S localhost:8000 
 ```
+
+## References
+
+- [Setup PHP PCOV for 5 times faster PHPUnit code coverage](https://dev.to/swashata/setup-php-pcov-for-5-times-faster-phpunit-code-coverage-3d9c)
 
 ## Buy me a coffee
 

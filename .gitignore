@@ -5,3 +5,7 @@
 .project
 .classpath
 tmp*
+.phpunit.cache
+.settings
+clover.xml
+coberture.xml
