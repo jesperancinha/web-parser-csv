@@ -4,11 +4,14 @@ use PHPUnit\Framework\TestCase;
 
 
 /**
- * @covers Calculator
+ * @covers Person
  */
 class PersonTest extends TestCase
 {
 
+    /**
+     * @covers Person
+     */
     public function test__construct()
     {
         $person = new Person("id", "name", "surname");
