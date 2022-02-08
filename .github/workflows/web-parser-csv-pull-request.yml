@@ -1,0 +1,26 @@
+name: web-parser-csv_request
+
+on:
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: Setup PHP with pre-release PECL extension
+      uses: shivammathur/setup-php@v2
+      with:
+        php-version: '8.1'
+        extensions: xdebug-beta
+    - name: Install Python Dependencies
+      run:
+        sudo apt-get -y install python3-pip &&
+        python -m pip install --upgrade pip &&
+        pip3 install omni-coveragereporter &&
+        pip3 install GitPython &&
+        pip3 install requests
+
+    - name: Run PHP Tests
+      run: phpunit --bootstrap src/upload.php --coverage-clover clover.xml tests
