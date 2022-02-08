@@ -24,7 +24,7 @@ jobs:
         pip3 install requests
 
     - name: Run PHP Tests
-      run: phpunit --coverage-clover clover.xml tests/PersonTest.php
+      run: phpunit --bootstrap src/upload.php --coverage-clover clover.xml tests/PersonTest.php
 
     - name: Send reports
       run: omni_coveragereporter_python.py
