@@ -7,7 +7,11 @@
 
 [![web-parser-csv](https://github.com/jesperancinha/web-parser-csv/actions/workflows/web-parser-csv.yml/badge.svg)](https://github.com/jesperancinha/web-parser-csv/actions/workflows/web-parser-csv.yml)
 
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/ddbd7356a80b4bd9ac37da877377a285)](https://www.codacy.com/gh/jesperancinha/web-parser-csv/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=jesperancinha/web-parser-csv&amp;utm_campaign=Badge_Grade)
+
+[![Codacy Badge](https://app.codacy.com/project/badge/Coverage/ddbd7356a80b4bd9ac37da877377a285)](https://www.codacy.com/gh/jesperancinha/web-parser-csv/dashboard?utm_source=github.com&utm_medium=referral&utm_content=jesperancinha/web-parser-csv&utm_campaign=Badge_Coverage)
 [![Coverage Status](https://coveralls.io/repos/github/jesperancinha/web-parser-csv/badge.svg?branch=master)](https://coveralls.io/github/jesperancinha/web-parser-csv?branch=master)
+[![codecov](https://codecov.io/gh/jesperancinha/web-parser-csv/branch/master/graph/badge.svg?token=0RcRaxXSvh)](https://codecov.io/gh/jesperancinha/web-parser-csv)
 
 [![GitHub language count](https://img.shields.io/github/languages/count/jesperancinha/web-parser-csv.svg)](#)
 [![GitHub top language](https://img.shields.io/github/languages/top/jesperancinha/web-parser-csv.svg)](#)
