@@ -49,7 +49,7 @@ php -S localhost:8000
 
 ## References
 
-- [Setup PHP PCOV for 5 times faster PHPUnit code coverage](https://dev.to/swashata/setup-php-pcov-for-5-times-faster-phpunit-code-coverage-3d9c)
+-   [Setup PHP PCOV for 5 times faster PHPUnit code coverage](https://dev.to/swashata/setup-php-pcov-for-5-times-faster-phpunit-code-coverage-3d9c)
 
 ## Buy me a coffee
 
