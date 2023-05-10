@@ -19,13 +19,9 @@
 
 ---
 
-## Tech Stack
+## Technologies used
 
----
-
-[![alt text](https://raw.githubusercontent.com/jesperancinha/project-signer/master/project-signer-templates/icons-50/php-50.png "PHP")](https://www.php.net/)
-
----
+Please check the [TechStack.md](TechStack.md) file for details.
 
 ## Introduction
 
